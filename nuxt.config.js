@@ -2,7 +2,7 @@ module.exports = {
   routeParams: {
     "/projets/:link": function() {
       return axios.get("~/assets/js/content.json").then(res => {
-        return res.data;
+        return res.items;
       });
     }
   },
