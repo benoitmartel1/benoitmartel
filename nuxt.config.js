@@ -1,9 +1,11 @@
-var contents = require("assets/js/content.json");
-var items = contents.items;
+import contents from "~assets/content.json";
 
 module.exports = {
+  data: function() {
+    return contents;
+  },
   generate: {
-    routes: createRoutes()
+    routes: createRoutes(contents.items)
   },
   head: {
     title: "Benoit Martel",
@@ -56,7 +58,7 @@ module.exports = {
   }
 };
 
-function createRoutes() {
+function createRoutes(items) {
   var routes = [];
   for (i = 0; i > items.length; i++) {
     routes.push("projets/" + items[i].link);
