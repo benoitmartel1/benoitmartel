@@ -1,4 +1,6 @@
-const contents = System.import("~assets/content.json");
+const contents = process.BROWSER_BUILD
+  ? System.import("~assets/content.json")
+  : Promise.resolve(require("~assets/content.json"));
 
 module.exports = {
   data: function() {
