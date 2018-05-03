@@ -1,4 +1,4 @@
-var contents = require("~/assets/js/content.json");
+var contents = require("assets/js/content.json");
 var items = contents.items;
 
 module.exports = {
