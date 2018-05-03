@@ -1,4 +1,7 @@
 module.exports = {
+  generate: {
+    routes: [createRoutes()]
+  },
   head: {
     title: "Benoit Martel",
     meta: [
@@ -49,3 +52,6 @@ module.exports = {
     }
   }
 };
+function createRoutes() {
+  return "projets/demo-reel";
+}
