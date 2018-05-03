@@ -1,4 +1,4 @@
-import contents from "~assets/content.json";
+System.import contents from "~assets/content.json";
 
 module.exports = {
   data: function() {
