@@ -1,0 +1,86 @@
+body {
+  background: #fbfbfb;
+  font-family: "Montserrat", sans-serif;
+
+  background: #fce8b0; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #fce8b0 0%,
+    #f9ffe5 40%,
+    #cdffc1 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #fce8b0 0%,
+    #f9ffe5 40%,
+    #cdffc1 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #fce8b0 0%,
+    #f9ffe5 40%,
+    #cdffc1 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce8b0', endColorstr='#cdffc1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  margin: 1% 8%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content {
+  margin: 40px 0 0 8px;
+}
+a,
+li,
+video,
+.projet {
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+.menu {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  /* border-bottom: 1px dotted #ccc; */
+  overflow: auto;
+  display: table;
+  margin: 0 auto;
+}
+
+.menu li {
+  padding: 5px 10px;
+  float: left;
+  display: block;
+}
+
+.menu li:hover:not(.nuxt-link-active) {
+  background-color: #bbb;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(3%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0 3%;
+  }
+  .content {
+    margin: 0;
+  }
+}
