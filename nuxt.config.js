@@ -1,11 +1,10 @@
 module.exports = {
-	routeParams: {
-		'/projets/:link': function () {
-			return axios.get('~/assets/js/content.json')
-			.then((res) {
-			return res.data
-			})
-	  }
+  routeParams: {
+    "/projets/:link": function() {
+      return axios.get("~/assets/js/content.json").then(res => {
+        return res.data;
+      });
+    }
   },
   head: {
     title: "Benoit Martel",
