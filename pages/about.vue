@@ -1,6 +1,6 @@
 <template>
  <div class="content">
-	<h2>Compitences</h2>
-	<p>Artiste multidisciplinaire.</p>
+	<h2>À venir</h2>
+	<p></p>
   </div>
 </template>

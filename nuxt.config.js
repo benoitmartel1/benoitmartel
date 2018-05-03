@@ -1,6 +1,6 @@
 module.exports = {
   generate: {
-    routes: [createRoutes()]
+    routes: createRoutes()
   },
   head: {
     title: "Benoit Martel",
@@ -53,5 +53,11 @@ module.exports = {
   }
 };
 function createRoutes() {
-  return "projets/demo-reel";
+  var routes = [];
+  var items = require("/assets/js/content.json");
+  for (i = 0; i > items.length; i++) {
+    routes.push("projets/" + items[i].link);
+  }
+
+  return routes;
 }
