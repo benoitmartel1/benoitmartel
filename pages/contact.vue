@@ -1,6 +1,9 @@
 <template>
 	<div class="content">
-		<form>      
+		<form name="contact" netlify-honeypot="bot-field" method="POST" netlify> 
+		<p class="hidden">
+		<label>Don’t fill this out if you're human: <input name="bot-field"></label>
+		</p>     
 		<input name="name" type="text" class="feedback-input" placeholder="Nom" />   
 		<input name="email" type="text" class="feedback-input" placeholder="Email" />
 		<textarea name="text" class="feedback-input" placeholder="Message"></textarea>
@@ -13,7 +16,9 @@
 form {
   max-width: 420px;
 }
-
+.hidden {
+  display: none;
+}
 .feedback-input {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 500;
