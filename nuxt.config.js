@@ -1,4 +1,4 @@
-System.import contents from "~assets/content.json";
+const contents = System.import("~assets/content.json");
 
 module.exports = {
   data: function() {
