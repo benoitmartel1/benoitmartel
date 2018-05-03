@@ -1,13 +1,11 @@
-const contents = process.BROWSER_BUILD
-  ? System.import("~assets/content.json")
-  : Promise.resolve(require("~assets/content.json"));
-
 module.exports = {
-  data: function() {
-    return contents;
-  },
-  generate: {
-    routes: createRoutes(contents.items)
+	routeParams: {
+		'/projets/:link': function () {
+			return axios.get('~/assets/js/content.json')
+			.then((res) {
+			return res.data
+			})
+	  }
   },
   head: {
     title: "Benoit Martel",
@@ -59,12 +57,3 @@ module.exports = {
     }
   }
 };
-
-function createRoutes(items) {
-  var routes = [];
-  for (i = 0; i > items.length; i++) {
-    routes.push("projets/" + items[i].link);
-  }
-
-  return routes;
-}
