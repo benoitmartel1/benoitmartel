@@ -54,7 +54,7 @@ module.exports = {
 };
 function createRoutes() {
   var routes = [];
-  var items = require("/assets/js/content.json");
+  var items = require("~/assets/js/content.json");
   for (i = 0; i > items.length; i++) {
     routes.push("projets/" + items[i].link);
   }
