@@ -8,13 +8,16 @@
 			<div class="description">{{ textWithoutBreaks(item.projet) }}</div>
 		</div>
 
-		<div class="row" v-for="video in item.videos" :key="video.path">
+		<div class="row">
 			<!-- Feature-->
-			<div class="video-container" >
+			<div v-if="item.videos" class="media-container">
 				<img class="play" src="/media/play.png">
 				<video id="video" controls onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-					<source :src="videoPath(video)" type="video/mp4">
+					<source :src="videoPath(item.videos[0])" type="video/mp4">
 				</video>
+			</div>
+			<div v-else-if="item.images" class="media-container">
+				<img class="featured" :src='"/media/" + item.images[0].path + ".jpg"'>
 			</div>
 			<!-- descriptif latéral --> 
 			<div class="text-container">
@@ -56,7 +59,6 @@ export default {
     this.$nextTick(() => {
       $("#portfolio").addClass("active");
       $(".play").on("click", function(e) {
-        console.log(e.target);
         $(e.target)
           .siblings("video")[0]
           .play();
@@ -84,7 +86,9 @@ export default {
 .video .text {
   float: right;
 }
-
+.media-container .featured {
+  width: 100%;
+}
 .header {
   margin: 20px 0;
   animation: 400ms ease-out 0s 1 slideInFromRight;
@@ -108,7 +112,7 @@ export default {
 .row {
   width: 100%;
 }
-.row .video-container {
+.row .media-container {
   width: 60%;
   margin-right: 3%;
   float: left;

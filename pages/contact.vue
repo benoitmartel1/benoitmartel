@@ -1,6 +1,6 @@
 <template>
 	<div class="content">
-		<form name="contact" netlify-honeypot="bot-field" netlify> 
+		<form name="contact" method="POST" netlify-honeypot="bot-field" netlify> 
 		<p class="hidden">
 		<label>Don’t fill this out if you're human: <input name="bot-field"></label>
 		</p>     
@@ -9,6 +9,7 @@
 		<textarea name="text" class="feedback-input" placeholder="Message"></textarea>
 		<input type="submit" value="Envoyer"/>
 		</form>
+		
 	</div>
 </template>
 
@@ -27,7 +28,7 @@ form {
   font-size: 18px;
   line-height: 22px;
   background-color: white;
-
+  box-shadow: 3px;
   /* border: 1px solid #cc6666; */
   transition: all 0.3s;
   padding: 10px;

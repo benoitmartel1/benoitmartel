@@ -6,7 +6,6 @@
       "link": "demo-reel",
       "description":
         "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
-      "ressources": ["After Effects", "Photoshop"],
       "type": "motion",
       "images": [
         {
@@ -16,8 +15,7 @@
       ],
       "videos": [
         {
-          "path": "demo",
-          "text": "After Effects"
+          "path": "demo"
         }
       ]
     },
@@ -67,8 +65,9 @@
       "projet": "Empress of Ireland",
       "link": "empress-ireland",
       "description":
-        "Court métrage recréant le naufrage de l'Empress Of Ireland, présenté au sein d'un spectacle multisensoriel.",
+        "Extrait du court métrage recréant le naufrage de l'Empress Of Ireland, présenté au sein d'un spectacle multisensoriel.",
       "type": "motion",
+      "taches": ["Motion design", "Direction artistique"],
       "images": [
         {
           "path": "PAP",
@@ -97,15 +96,6 @@
         {
           "path": "valet",
           "isThumb": true
-        },
-        {
-          "path": "gogo"
-        }
-      ],
-      "videos": [
-        {
-          "path": "PAP_MOVIE",
-          "text": "After Effects"
         }
       ]
     },
@@ -121,15 +111,6 @@
         {
           "path": "appro",
           "isThumb": true
-        },
-        {
-          "path": "gogo"
-        }
-      ],
-      "videos": [
-        {
-          "path": "PAP_MOVIE",
-          "text": "After Effects"
         }
       ]
     }
