@@ -10,7 +10,9 @@ function createRoutes(items) {
 }
 
 module.exports = {
-  routes: createRoutes(contents.items),
+  nuxtRoutes: {
+    routes: createRoutes(contents.items)
+  },
   head: {
     title: "Benoit Martel",
     meta: [
