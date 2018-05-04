@@ -10,7 +10,7 @@ function createRoutes(items) {
 }
 
 module.exports = {
-  nuxtRoutes: {
+  router: {
     routes: createRoutes(contents.items)
   },
   head: {
