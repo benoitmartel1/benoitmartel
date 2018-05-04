@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div class="content">
 	<nuxt-link exact to="/" class="fas fa-arrow-left"></nuxt-link>
-	<div class="content">
+	<div>
 		<!-- Header--> 
 		<div class="header">
-			<div class="client">{{ item.client }}</div>
-			<div class="description">{{ item.projet }}</div>
+			<div class="client">{{ textWithoutBreaks(item.client) }}</div>
+			<div class="description">{{ textWithoutBreaks(item.projet) }}</div>
 		</div>
 
 		<div class="row" v-for="video in item.videos" :key="video.path">
 			<!-- Feature-->
 			<div class="video-container" >
 				<img class="play" src="/media/play.png">
-				<video  controls onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+				<video id="video" controls onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
 					<source :src="videoPath(video)" type="video/mp4">
 				</video>
 			</div>
@@ -44,13 +44,35 @@ export default {
     return { item: false };
   },
   methods: {
+    textWithoutBreaks: function(text) {
+      return typeof text == "undefined" ? false : text.replace("<br>", " ");
+    },
     videoPath: function(v) {
-      return "/media/" + v.path + ".mp4";
+      return "http://media.benoitmartel.com/" + v.path + ".mp4";
     }
   },
   mounted: function() {
     this.item = items.filter(item => item.link == this.$route.params.projet)[0];
-    $("#portfolio").addClass("active");
+    this.$nextTick(() => {
+      $("#portfolio").addClass("active");
+      $(".play").on("click", function(e) {
+        console.log(e.target);
+        $(e.target)
+          .siblings("video")[0]
+          .play();
+      });
+      $("video")
+        .on("pause", function(e) {
+          $(e.target)
+            .siblings()
+            .show();
+        })
+        .on("play", function(e) {
+          $(e.target)
+            .siblings()
+            .hide();
+        });
+    });
   },
   beforeRouteLeave(to, from, next) {
     $("#portfolio").removeClass("active");
@@ -59,12 +81,10 @@ export default {
 };
 </script>
 <style>
-.content {
-  margin-top: 0;
-}
 .video .text {
   float: right;
 }
+
 .header {
   margin: 20px 0;
   animation: 400ms ease-out 0s 1 slideInFromRight;
@@ -92,15 +112,23 @@ export default {
   width: 60%;
   margin-right: 3%;
   float: left;
+  position: relative;
 }
 .play {
-  left: 38%;
-  top: 28%;
-  width: 25%;
+  transition: all 200ms ease;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 100;
   opacity: 0.5;
   border: none;
+  width: 20%;
+  z-index: 100;
+}
+.play:hover {
+  opacity: 1;
 }
 @media screen and (max-width: 500px) {
   .row .video-container {

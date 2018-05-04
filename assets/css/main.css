@@ -30,12 +30,14 @@ body {
 }
 
 .content {
-  margin: 40px 0 0 8px;
+  padding: 10px 0 0 0px;
+  /* background-color: white; */
 }
 a,
 li,
 video,
-.projet {
+.projet,
+.play {
   user-select: none;
   cursor: pointer;
   text-decoration: none;

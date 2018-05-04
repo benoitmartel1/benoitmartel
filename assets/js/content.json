@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "client": "Benoit Martel",
+      "client": "",
       "projet": "Demo Reel",
       "link": "demo-reel",
       "description":
@@ -16,17 +16,17 @@
       ],
       "videos": [
         {
-          "path": "demo_reel",
+          "path": "demo",
           "text": "After Effects"
         }
       ]
     },
     {
-      "client": "Musée naturel des sciences de Sherbrooke",
-      "projet": "Publicité Terra Mutantès",
+      "client": "Musée naturel<br>des sciences de Sherbrooke",
+      "projet": "Publicité<br>Terra Mutantès",
       "link": "terra-mutantes",
-      "description": "Publicité infographique.",
-      "taches": ["Réalisation", "Motion design"],
+      "description": "Publicité pour une installation interactive permanente.",
+      "taches": ["Motion design", "Montage"],
       "type": "motion",
       "images": [
         {
@@ -36,7 +36,7 @@
       ],
       "videos": [
         {
-          "path": "MNSS",
+          "path": "mnss",
           "credits": "Tournage : Mario Landry | id3"
         }
       ]
@@ -45,20 +45,17 @@
       "client": "Forges-du-Saint-Maurice",
       "projet": "Bornes interactives",
       "link": "bornes-interactives",
-      "description": "Publicité infographique.",
-      "ressources": ["After Effects"],
+      "description":
+        "Animations sur la fabrication du charbon de bois présentées dans des bornes interactives.",
       "type": "motion",
+      "taches": ["Motion design", "Direction artistique"],
       "images": [
         {
-          "path": "charbon",
+          "path": "forges",
           "isThumb": true
         }
       ],
       "videos": [
-        {
-          "path": "charbon",
-          "credits": "Tournage : Mario Landry | id3"
-        },
         {
           "path": "charbon",
           "credits": "Tournage : Mario Landry | id3"
@@ -70,14 +67,35 @@
       "projet": "Empress of Ireland",
       "link": "empress-ireland",
       "description":
-        "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
-      "ressources": ["After Effects", "Photoshop"],
+        "Court métrage recréant le naufrage de l'Empress Of Ireland, présenté au sein d'un spectacle multisensoriel.",
       "type": "motion",
-      "texte":
-        "Court métrage d'animation recréant le naufrage de l'Empress Of Ireland.",
       "images": [
         {
           "path": "PAP",
+          "isThumb": true
+        },
+        {
+          "path": "gogo"
+        }
+      ],
+      "videos": [
+        {
+          "path": "pap",
+          "text": "After Effects"
+        }
+      ]
+    },
+    {
+      "client": "Banque Nationale",
+      "projet": "Valet numérique",
+      "link": "valet-numerique",
+      "description":
+        "Application déployée sur iPads pour monitorer l'arrivée des convives à un événement de formation.",
+      "ressources": ["Javascript", "MySQL"],
+      "type": "code",
+      "images": [
+        {
+          "path": "valet",
           "isThumb": true
         },
         {
@@ -92,18 +110,16 @@
       ]
     },
     {
-      "client": "Banque Nationale",
-      "projet": "Valet numérique",
-      "link": "valet-numerique",
+      "client": "Idées au cube",
+      "projet": "Appro-machine",
+      "link": "appro-machine",
       "description":
-        "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
-      "ressources": ["Javascript", "MySQL"],
+        "Solution clé en main qui automatise le processus d'approbation de vidéos.",
+      "ressources": ["Javascript", "MySQL", "PHP", "BASH"],
       "type": "code",
-      "texte":
-        "Court métrage d'animation recréant le naufrage de l'Empress Of Ireland.",
       "images": [
         {
-          "path": "valet",
+          "path": "appro",
           "isThumb": true
         },
         {

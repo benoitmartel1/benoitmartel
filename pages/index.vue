@@ -1,5 +1,5 @@
 <template>
-	<div id="portfolio">
+	<div id="portfolio" class="content">
 	<filters></filters>
 
 		<div class="container">
@@ -7,8 +7,8 @@
 				<a :href="'/projets/'+ item.link">
 					<img :src="imgPath(item.images)">
 					<div class="text">
-						<div class="client">{{ item.client }}</div>
-						<div class="description">{{ item.projet }}</div>
+						<div class="client" v-html="item.client"></div>
+						<div class="description" v-html="item.projet"></div>
 					</div>
 				</a>
 			</div>
@@ -47,16 +47,7 @@ export default {
         // main isotope options
         itemSelector: ".item",
         // set layoutMode
-        layoutMode: "fitRows",
-        // options for cellsByRow layout mode
-        cellsByRow: {
-          columnWidth: 200,
-          rowHeight: 150
-        },
-        // options for masonry layout mode
-        masonry: {
-          columnWidth: ".grid-sizer"
-        }
+        layoutMode: "fitRows"
       });
       //Filter Portfolio items
       $(".filter a").click(function(e) {
@@ -77,9 +68,7 @@ export default {
   width: 360px;
   height: 240px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 3px 3px 0;
 }
 
 .item img {
@@ -136,5 +125,8 @@ export default {
   top: 0px;
 }
 @media screen and (max-width: 500px) {
+  .item {
+    max-width: 100%;
+  }
 }
 </style>

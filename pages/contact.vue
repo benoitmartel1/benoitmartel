@@ -14,6 +14,8 @@
 
 <style>
 form {
+  padding: 10px 20px 20px 0;
+
   max-width: 420px;
 }
 .hidden {
@@ -25,6 +27,7 @@ form {
   font-size: 18px;
   line-height: 22px;
   background-color: white;
+
   /* border: 1px solid #cc6666; */
   transition: all 0.3s;
   padding: 10px;
@@ -43,19 +46,18 @@ textarea {
 [type="submit"] {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   background: white;
-  border-radius: 5px;
   border: 0;
   cursor: pointer;
   color: black;
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 10px 20px;
-
+  border: 1px #999 solid;
   transition: all 0.3s;
   margin-top: -4px;
   font-weight: 400;
 }
 [type="submit"]:hover {
-  background: #cc4949;
+  background: palegreen;
 }
 </style>
 

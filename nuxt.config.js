@@ -1,14 +1,5 @@
 var contents = require("./assets/js/content.json");
 
-function createRoutes(items) {
-  var routesArray = [];
-  for (item of items) {
-    routesArray.push("/projets/" + item.link);
-  }
-  console.log(routesArray);
-  return routesArray;
-}
-
 module.exports = {
   generate: {
     routes: createRoutes(contents.items)
@@ -63,3 +54,11 @@ module.exports = {
     }
   }
 };
+
+function createRoutes(items) {
+  var routesArray = [];
+  for (item of items) {
+    routesArray.push("/projets/" + item.link);
+  }
+  return routesArray;
+}
