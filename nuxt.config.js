@@ -3,8 +3,9 @@ var contents = require("./assets/js/content.json");
 function createRoutes(items) {
   var routesArray = [];
   for (item of items) {
-    routesArray.push("projets/" + item.link);
+    routesArray.push("/projets/" + item.link);
   }
+  console.log(routesArray);
   return routesArray;
 }
 
