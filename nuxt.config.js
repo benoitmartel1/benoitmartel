@@ -10,7 +10,7 @@ function createRoutes(items) {
 }
 
 module.exports = {
-  router: {
+  generate: {
     routes: createRoutes(contents.items)
   },
   head: {
