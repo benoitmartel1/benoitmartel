@@ -1,15 +1,19 @@
 <template>
 	<div class="content">
-		<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"> 
-		<p class="hidden">
-		<label>Don’t fill this out if you're human: <input name="bot-field"></label>
-		</p>     
-		<input name="name" type="text" class="feedback-input" placeholder="Nom" />   
-		<input name="email" type="email" class="feedback-input" placeholder="Email" />
-		<textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-		<button type="submit" value="Envoyer"></button>
-		</form>
-		
+		<form name="contact" method="POST" netlify>
+		<p>
+			<label>Your Name: <input type="text" name="name"></label>   
+		</p>
+		<p>
+			<label>Your Email: <input type="email" name="email"></label>
+		</p>
+		<p>
+			<label>Message: <textarea name="message"></textarea></label>
+		</p>
+		<p>
+			<button type="submit">Send</button>
+		</p>
+		</form>	
 	</div>
 </template>
 
