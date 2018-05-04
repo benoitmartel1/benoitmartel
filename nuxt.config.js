@@ -1,11 +1,15 @@
+var contents = require("./assets/js/content.json");
+
+function createRoutes(items) {
+  var routesArray = [];
+  for (item of items) {
+    routesArray.push(item.link);
+  }
+  return routesArray;
+}
+
 module.exports = {
-  routeParams: {
-    "/projets/:link": function() {
-      return axios.get("~/assets/js/content.json").then(res => {
-        return res;
-      });
-    }
-  },
+  routes: createRoutes(contents.items),
   head: {
     title: "Benoit Martel",
     meta: [
