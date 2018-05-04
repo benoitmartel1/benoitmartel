@@ -1,13 +1,13 @@
 <template>
 	<div class="content">
-		<form name="contact" method="POST" netlify-honeypot="bot-field" netlify="true"> 
+		<form name="contact" method="POST" netlify-honeypot="bot-field" netlify> 
 		<p class="hidden">
 		<label>Don’t fill this out if you're human: <input name="bot-field"></label>
 		</p>     
 		<input name="name" type="text" class="feedback-input" placeholder="Nom" />   
-		<input name="email" type="text" class="feedback-input" placeholder="Email" />
+		<input name="email" type="email" class="feedback-input" placeholder="Email" />
 		<textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-		<input type="submit" value="Envoyer"/>
+		<button type="submit" value="Envoyer"></button>
 		</form>
 		
 	</div>
