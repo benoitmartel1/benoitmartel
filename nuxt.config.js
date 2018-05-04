@@ -3,7 +3,7 @@ var contents = require("./assets/js/content.json");
 function createRoutes(items) {
   var routesArray = [];
   for (item of items) {
-    routesArray.push(item.link);
+    routesArray.push("projets/" + item.link);
   }
   return routesArray;
 }
