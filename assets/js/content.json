@@ -2,10 +2,9 @@
   "items": [
     {
       "client": "",
-      "projet": "Demo Reel",
+      "projet": "Demo Krill",
       "link": "demo-reel",
-      "description":
-        "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
+      "description": "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
       "type": "motion",
       "images": [
         {
@@ -43,8 +42,7 @@
       "client": "Forges-du-Saint-Maurice",
       "projet": "Bornes interactives",
       "link": "bornes-interactives",
-      "description":
-        "Animations sur la fabrication du charbon de bois présentées dans des bornes interactives.",
+      "description": "Animations sur la fabrication du charbon de bois présentées dans des bornes interactives.",
       "type": "motion",
       "taches": ["Motion design", "Direction artistique"],
       "images": [
@@ -64,8 +62,7 @@
       "client": "Pointe-au-Père",
       "projet": "Empress of Ireland",
       "link": "empress-ireland",
-      "description":
-        "Extrait du court métrage recréant le naufrage de l'Empress Of Ireland, présenté au sein d'un spectacle multisensoriel.",
+      "description": "Extrait du court métrage recréant le naufrage de l'Empress Of Ireland, présenté au sein d'un spectacle multisensoriel.",
       "type": "motion",
       "taches": ["Motion design", "Direction artistique"],
       "images": [
@@ -88,8 +85,7 @@
       "client": "Banque Nationale",
       "projet": "Valet numérique",
       "link": "valet-numerique",
-      "description":
-        "Application déployée sur iPads pour monitorer l'arrivée des convives à un événement de formation.",
+      "description": "Application déployée sur iPads pour monitorer l'arrivée des convives à un événement de formation.",
       "ressources": ["Javascript", "MySQL"],
       "type": "code",
       "images": [
@@ -103,8 +99,7 @@
       "client": "Idées au cube",
       "projet": "Appro-machine",
       "link": "appro-machine",
-      "description":
-        "Solution clé en main qui automatise le processus d'approbation de vidéos.",
+      "description": "Solution clé en main qui automatise le processus d'approbation de vidéos.",
       "ressources": ["Javascript", "MySQL", "PHP", "BASH"],
       "type": "code",
       "images": [
