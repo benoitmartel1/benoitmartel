@@ -2,10 +2,9 @@
   "items": [
     {
       "client": "Benoit Martel",
-      "projet": "Demo Reel",
+      "projet": "Demo Krill",
       "link": "demo-reel",
-      "description":
-        "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
+      "description": "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
       "ressources": ["After Effects", "Photoshop"],
       "type": "motion",
       "images": [
@@ -69,12 +68,10 @@
       "client": "Pointe-au-Père",
       "projet": "Empress of Ireland",
       "link": "empress-ireland",
-      "description":
-        "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
+      "description": "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
       "ressources": ["After Effects", "Photoshop"],
       "type": "motion",
-      "texte":
-        "Court métrage d'animation recréant le naufrage de l'Empress Of Ireland.",
+      "texte": "Court métrage d'animation recréant le naufrage de l'Empress Of Ireland.",
       "images": [
         {
           "path": "PAP",
@@ -95,12 +92,10 @@
       "client": "Banque Nationale",
       "projet": "Valet numérique",
       "link": "valet-numerique",
-      "description":
-        "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
+      "description": "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
       "ressources": ["Javascript", "MySQL"],
       "type": "code",
-      "texte":
-        "Court métrage d'animation recréant le naufrage de l'Empress Of Ireland.",
+      "texte": "Court métrage d'animation recréant le naufrage de l'Empress Of Ireland.",
       "images": [
         {
           "path": "valet",
