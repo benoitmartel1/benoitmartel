@@ -1,38 +1,18 @@
 body {
-  background: #fbfbfb;
-  font-family: "Montserrat", sans-serif;
-
-  background: #fce8b0; /* Old browsers */
-  background: -moz-linear-gradient(
-    -45deg,
-    #fce8b0 0%,
-    #f9ffe5 40%,
-    #cdffc1 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    -45deg,
-    #fce8b0 0%,
-    #f9ffe5 40%,
-    #cdffc1 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    135deg,
-    #fce8b0 0%,
-    #f9ffe5 40%,
-    #cdffc1 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce8b0', endColorstr='#cdffc1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #fbfbfb !important;
+  font-family: "Karla", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 
   margin: 1% 8%;
+  margin-top: 0;
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-.content {
-  padding: 10px 0 0 0px;
-  /* background-color: white; */
+ul {
+  list-style: none;
 }
+
 a,
 li,
 video,
@@ -65,7 +45,7 @@ a:active {
 }
 
 .menu li:hover:not(.nuxt-link-active) {
-  background-color: #bbb;
+  color: black;
 }
 
 @keyframes slideInFromRight {
@@ -80,7 +60,12 @@ a:active {
 }
 @media screen and (max-width: 500px) {
   body {
+    font-size: 14px;
     margin: 0 3%;
+  }
+
+  .top {
+    width: 100% !important;
   }
   .content {
     margin: 0;
