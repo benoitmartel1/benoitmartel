@@ -1,15 +1,18 @@
 <template>
-	<div class="content">
-		<form name="contact" action="/" method="POST" netlify-honeypot="bot-field" data-netlify="true"> 
-		<p class="hidden">
-		<label>Don’t fill this out if you're human: <input name="bot-field"></label>
-		</p>     
-		<input name="name" type="text" class="feedback-input" placeholder="Nom" />   
-		<input name="email" type="email" class="feedback-input" placeholder="Email" />
-		<textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-		<input type="submit" value="Envoyer"/>
-		</form>
-	</div>
+  <div class="content">
+    <form name="contact" action="/" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you're human:
+          <input name="bot-field" />
+        </label>
+      </p>
+      <input name="name" type="text" class="feedback-input" placeholder="Nom" />
+      <input name="email" type="email" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+      <input type="submit" value="Envoyer" />
+    </form>
+  </div>
 </template>
 
 <style>
@@ -22,7 +25,6 @@ form {
   display: none;
 }
 .feedback-input {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;

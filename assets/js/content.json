@@ -2,10 +2,11 @@
   "items": [
     {
       "client": "",
-      "projet": "Demo Krill",
+      "projet": "Demo Reel",
       "link": "demo-reel",
-      "description": "Court métrage d'animation au coeur d'un spectacle multisensoriel.",
+      "description": "",
       "type": "motion",
+      "credits": ["Musique > Penguin Prison"],
       "images": [
         {
           "path": "demo",
@@ -15,6 +16,37 @@
       "videos": [
         {
           "path": "demo"
+        }
+      ]
+    },
+    {
+      "client": "Pointe-à-Callière",
+      "projet": "Bâtisseurs de Montréal / Ligne du temps",
+      "link": "ligne-du-temps",
+      "description": "Solution clé en main de synchronisation d'appareils DMX avec une projection 2 écrans avec mapping.",
+      "ressources": ["Touch Designer"],
+      "type": "code",
+      "credits": ["Infographie : Mathieu Lalumière", "Maquette : TKNL"],
+      "images": [
+        {
+          "path": "pac",
+          "isThumb": true
+        }
+      ]
+    },
+    {
+      "client": "Trou de la fée",
+      "projet": "Spectacle immersif",
+      "link": "trou-de-la-fee",
+      "description": "Spectacle immersif 360° projeté dans un amphitéâtre de roc.",
+      "taches": [
+        "Faire le lien entre la production infographique et l’intégration sur place pour en assurer la conformité."
+      ],
+      "type": "code",
+      "images": [
+        {
+          "path": "tdf",
+          "isThumb": true
         }
       ]
     },
@@ -33,8 +65,7 @@
       ],
       "videos": [
         {
-          "path": "mnss",
-          "credits": "Tournage : Mario Landry | id3"
+          "path": "mnss"
         }
       ]
     },
@@ -42,9 +73,9 @@
       "client": "Forges-du-Saint-Maurice",
       "projet": "Bornes interactives",
       "link": "bornes-interactives",
-      "description": "Animations sur la fabrication du charbon de bois présentées dans des bornes interactives.",
+      "description": "Capsules vidéos sur la fabrication du charbon de bois présentées sur des bornes interactives.",
       "type": "motion",
-      "taches": ["Motion design", "Direction artistique"],
+      "taches": ["Motion design"],
       "images": [
         {
           "path": "forges",
@@ -53,8 +84,7 @@
       ],
       "videos": [
         {
-          "path": "charbon",
-          "credits": "Tournage : Mario Landry | id3"
+          "path": "charbon"
         }
       ]
     },
@@ -62,9 +92,9 @@
       "client": "Pointe-au-Père",
       "projet": "Empress of Ireland",
       "link": "empress-ireland",
-      "description": "Extrait du court métrage recréant le naufrage de l'Empress Of Ireland, présenté au sein d'un spectacle multisensoriel.",
+      "description": "Court métrage infographique recréant le naufrage de l'Empress Of Ireland, présenté au sein d'un spectacle multisensoriel.",
       "type": "motion",
-      "taches": ["Motion design", "Direction artistique"],
+      "taches": ["Motion design", "Direction artistique visuelle"],
       "images": [
         {
           "path": "PAP",
@@ -85,7 +115,7 @@
       "client": "Banque Nationale",
       "projet": "Valet numérique",
       "link": "valet-numerique",
-      "description": "Application déployée sur iPads pour monitorer l'arrivée des convives à un événement de formation.",
+      "description": "Application déployée sur iPad pour monitorer l'arrivée des invités à un événement de formation.",
       "ressources": ["Javascript", "MySQL"],
       "type": "code",
       "images": [
@@ -93,13 +123,18 @@
           "path": "valet",
           "isThumb": true
         }
+      ],
+      "videos": [
+        {
+          "path": "valet"
+        }
       ]
     },
     {
       "client": "Idées au cube",
       "projet": "Appro-machine",
       "link": "appro-machine",
-      "description": "Solution clé en main qui automatise le processus d'approbation de vidéos.",
+      "description": "Solution multiplateforme qui automatise le processus d'approbation vidéo ainsi que l'indexation des fichiers archivés.",
       "ressources": ["Javascript", "MySQL", "PHP", "BASH"],
       "type": "code",
       "images": [
@@ -108,7 +143,91 @@
           "isThumb": true
         }
       ]
+    },
+    {
+      "client": "Parcs Canada",
+      "projet": "Capsule historique Georges-Étienne Cartier",
+      "link": "ge-cartier",
+      "description": "Capsule vidéo relatant le contexte géopolitique et les accomplissments de Georges-Étienne Cartier.",
+      "taches": ["Motion design", "Direction artistique"],
+      "type": "motion",
+      "images": [
+        {
+          "path": "gec",
+          "isThumb": true
+        }
+      ],
+      "videos": [
+        {
+          "path": "gec",
+          "text": "After Effects"
+        }
+      ]
+    },
+    {
+      "client": "Cathédrale de Moncton",
+      "projet": "Spectacle immersif dans une chapelle",
+      "link": "moncton",
+      "description": "Lien entre la production infographique et l’intégration sur place pour assurer la conformité.",
+      "taches": [
+        "Gabarits de travail After effects pour les motion designers.",
+        "Mise en place d’un système de rendus, de correction d’image et de compression vidéo qui tient compte des particularités de la surface de projection."
+      ],
+      "type": "code",
+      "images": [
+        {
+          "path": "moncton",
+          "isThumb": true
+        }
+      ]
+    },
+
+    {
+      "client": "Parcs Canada",
+      "projet": "Fort Lennox",
+      "link": "fort-lennox",
+      "description": "Solution clé en main qui automatise le processus d'approbation de vidéos.",
+      "ressources": ["After effects", "Cinema 4d"],
+      "type": "motion",
+      "images": [
+        {
+          "path": "lennox",
+          "isThumb": true
+        }
+      ],
+      "videos": [
+        {
+          "path": "lennox"
+        }
+      ]
+    },
+    {
+      "client": "Musée de la Gaspésie",
+      "projet": "Gaspésienne n°20",
+      "link": "gaspesienne",
+      "description": "Vidéo 360° contenue dans une application de réalite virtuelle [VR].",
+      "ressources": ["Javascript", "MySQL", "PHP", "BASH"],
+      "type": "code",
+      "images": [
+        {
+          "path": "gaspe",
+          "isThumb": true
+        }
+      ]
+    },
+    {
+      "client": "Innovation et technologie Canada",
+      "projet": "Jeu interactif au Parlement",
+      "link": "jeu-interactif",
+      "description": "Scénarisation et production d'éléments visuels d'un jeu interactif présenté à l'extérieur et grand public.",
+      "taches": ["Scénarisation", "Design", "Illustration", "Animation"],
+      "type": "motion",
+      "images": [
+        {
+          "path": "chine",
+          "isThumb": true
+        }
+      ]
     }
-  ],
-  "colors": ["FF161E", "6A4C93", "1982C4", "FF7F3A", "8AC926"]
+  ]
 }

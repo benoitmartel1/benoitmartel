@@ -1,41 +1,53 @@
 <template>
   <div class="content">
-	<nuxt-link exact to="/" class="fas fa-arrow-left"></nuxt-link>
-	<div>
-		<!-- Header--> 
-		<div class="header">
-			<div class="client">{{ textWithoutBreaks(item.client) }}</div>
-			<div class="description">{{ textWithoutBreaks(item.projet) }}</div>
-		</div>
+    <nuxt-link exact to="/" class="fas fa-arrow-left"></nuxt-link>
+    <div>
+      <!-- Header-->
+      <div class="header">
+        <div class="client">{{ textWithoutBreaks(item.client) }}</div>
+        <div class="description">{{ textWithoutBreaks(item.projet) }}</div>
+      </div>
 
-		<div class="row">
-			<!-- Feature-->
-			<div v-if="item.videos" class="media-container">
-				<img class="play" src="/media/play.png">
-				<video id="video" controls onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-					<source :src="videoPath(item.videos[0])" type="video/mp4">
-				</video>
-			</div>
-			<div v-else-if="item.images" class="media-container">
-				<img class="featured" :src='"/media/" + item.images[0].path + ".jpg"'>
-			</div>
-			<!-- descriptif latéral --> 
-			<div class="text-container">
-				<div class="description">{{ item.description }}</div>
-				<div v-if="item.taches" class="taches">
-					<ul>
-						<li v-for="tache in item.taches" :key="tache">{{tache}}</li>
-					</ul>
-				</div>
-				<div v-if="item.ressources" class="ressources">
-					<h4>Ressources utilisées</h4>
-					<ul>
-						<li v-for="ressource in item.ressources" :key="ressource">{{ressource}}</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+      <div class="row">
+        <!-- Feature-->
+        <div v-if="item.videos" class="media-container">
+          <img class="play" src="/media/play.png" />
+          <video
+            id="video"
+            controls
+            onclick="this.paused ? this.play() : this.pause();"
+            controlslist="nodownload"
+            :poster="'/media/'+item.images[0].path+'.jpg'"
+          >
+            <source :src="videoPath(item.videos[0])" type="video/mp4" />
+          </video>
+        </div>
+        <div v-else-if="item.images" class="media-container">
+          <img class="featured" :src="'/media/' + item.images[0].path + '.jpg'" />
+        </div>
+        <!-- descriptif latéral -->
+        <div class="text-container">
+          <div class="description">{{ item.description }}</div>
+          <div v-if="item.taches" class="taches">
+            <ul>
+              <li v-for="tache in item.taches" :key="tache">{{tache}}</li>
+            </ul>
+          </div>
+          <div v-if="item.ressources" class="ressources">
+            <h4>Ressources utilisées</h4>
+            <ul>
+              <li v-for="ressource in item.ressources" :key="ressource">{{ressource}}</li>
+            </ul>
+          </div>
+          <div v-if="item.credits" class="ressources">
+            <h4>Crédits</h4>
+            <ul>
+              <li v-for="credit in item.credits" :key="credit">{{credit}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -51,7 +63,7 @@ export default {
       return typeof text == "undefined" ? false : text.replace("<br>", " ");
     },
     videoPath: function(v) {
-      return "http://media.benoitmartel.com/" + v.path + ".mp4";
+      return "/media/" + v.path + ".mp4";
     }
   },
   mounted: function() {
@@ -117,6 +129,7 @@ export default {
   margin-right: 3%;
   float: left;
   position: relative;
+  margin-bottom: 20px;
 }
 .play {
   transition: all 200ms ease;
@@ -134,9 +147,16 @@ export default {
 .play:hover {
   opacity: 1;
 }
+.description {
+  font-size: 140%;
+}
 @media screen and (max-width: 500px) {
-  .row .video-container {
+  .row .video-container,
+  .row .media-container {
     width: 100%;
+  }
+  .description {
+    font-size: 100%;
   }
 }
 
@@ -147,11 +167,13 @@ video {
   margin-top: 30px;
   color: #333;
 }
+h4 {
+  margin-bottom: 10px;
+}
+
 .ressources ul {
   font-size: 0.9em;
-  margin-left: 10px;
-}
-.text-container .description {
-  font-size: 1.4em;
+  padding: 0;
+  margin: 0;
 }
 </style>

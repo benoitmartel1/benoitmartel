@@ -1,20 +1,19 @@
 <template>
-	<div id="portfolio" class="content">
-	<filters></filters>
+  <div id="portfolio" class="content">
+    <filters></filters>
 
-		<div class="container">
-			<div v-for="item in items" class="item" :class="item.type" :key="item.link">
-				<a :href="'/projets/'+ item.link">
-					<img :src="imgPath(item.images)">
-					<div class="text">
-						<div class="client" v-html="item.client"></div>
-						<div class="description" v-html="item.projet"></div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-
+    <div class="container">
+      <div v-for="item in items" class="item" :class="item.type" :key="item.link">
+        <a :href="'/projets/'+ item.link">
+          <img :src="imgPath(item.images)" />
+          <div class="text">
+            <div class="client" v-html="item.client"></div>
+            <div class="description" v-html="item.projet"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

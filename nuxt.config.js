@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Montserrat:400,700"
+        href: "https://fonts.googleapis.com/css?family=Karla"
       }
     ],
     script: [
@@ -37,16 +37,16 @@ module.exports = {
   },
   css: ["~/assets/css/main.css"],
   /*
-  ** Customize the progress bar color
-  */
+   ** Customize the progress bar color
+   */
   loading: { color: "#3B8070" },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** Run ESLint on save
-    */
+     ** Run ESLint on save
+     */
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
