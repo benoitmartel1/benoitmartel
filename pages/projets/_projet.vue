@@ -63,7 +63,7 @@ export default {
       return typeof text == "undefined" ? false : text.replace("<br>", " ");
     },
     videoPath: function(v) {
-      return "/media/" + v.path + ".mp4";
+      return "http://media.benoitmartel.com/" + v.path + ".mp4";
     }
   },
   mounted: function() {
