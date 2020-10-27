@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <form name="contactme" data-netlify="true" netlify netlify-honeypot="bot-field">
+    <form name="contactme" data-netlify="true" netlify-honeypot="bot-field">
 		<input
 			class="form-control valid"
 			name="name"
@@ -25,9 +25,7 @@
 			placeholder="Courriel"
 		/>
 		<textarea name="message"></textarea>
-		<div class="button">
-            <button type="submit" class="btn btn-primary">SEND</button>
-        </div>
+            <input type="submit" class="btn btn-primary" value='SEND'/>
     </form>
   </div>
 </template>
