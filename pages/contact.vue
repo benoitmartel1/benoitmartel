@@ -9,6 +9,7 @@
 			onfocus="this.placeholder = ''"
 			onblur="this.placeholder = 'Votre nom'"
 			placeholder="Nom"
+			value="contact"
 		/>
 		<input
   class="hidden"
@@ -23,6 +24,7 @@
 			onfocus="this.placeholder = ''"
 			onblur="this.placeholder = 'Votre courriel'"
 			placeholder="Courriel"
+			value="contact"
 		/>
 		<textarea name="message"></textarea>
 <button type="submit" class="button button-contactForm boxed-btn">
