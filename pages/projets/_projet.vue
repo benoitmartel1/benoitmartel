@@ -33,6 +33,11 @@
               <li v-for="tache in item.taches" :key="tache">{{tache}}</li>
             </ul>
           </div>
+          <div v-if="item.subTaches" class="subTaches">
+            <ul>
+              <li v-for="tache in item.subTaches" :key="tache">{{tache}}</li>
+            </ul>
+          </div>
           <div v-if="item.ressources" class="ressources">
             <h4>Ressources utilisées</h4>
             <ul>
@@ -175,5 +180,20 @@ h4 {
   font-size: 0.9em;
   padding: 0;
   margin: 0;
+}
+.taches {
+  font-weight: bold;
+}
+.subTaches {
+  position: relative;
+  left: 18px;
+  font-size: 0.95em;
+}
+.subTaches ul {
+  list-style: circle;
+  list-style-position: outside;
+}
+.subTaches li {
+  margin-bottom: 10px;
 }
 </style>

@@ -15,8 +15,9 @@
 </template>
 
 <style>
-.filter {
-  padding: 4px 0;
+.filter a:hover {
+text-decoration: underline;
 }
+.selected{ text-decoration: none; background-color:orange; color:white; }
 </style>
 

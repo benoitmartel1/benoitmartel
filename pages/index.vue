@@ -54,14 +54,17 @@ export default {
         $grid.isotope({
           filter: selector
         });
-        toggleSelected($(e.target).parent(), "selected");
-        return false;
+		// toggleSelected($(e.target).parent(), "selected");
+		$('.filter li').removeClass("selected");
+		$(e.target).parent().addClass("selected");
+    return false;
       });
     });
   }
 };
 </script>
 <style>
+
 .item {
   position: absolute;
   width: 360px;
@@ -123,6 +126,7 @@ export default {
 .item:hover .text div {
   top: 0px;
 }
+
 @media screen and (max-width: 500px) {
   .item {
     max-width: 100%;
