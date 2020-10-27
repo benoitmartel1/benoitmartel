@@ -8,7 +8,7 @@
         <div class="description">{{ textWithoutBreaks(item.projet) }}</div>
       </div>
 
-      <div class="row">
+      <div class="row bidou">
         <!-- Feature-->
         <div v-if="item.videos" class="media-container">
           <img class="play" src="/media/play.png" />
