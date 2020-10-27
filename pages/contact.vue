@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <form name="contact" action="/" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
+    <form name="contactme" method="post" data-netlify="true" netlify netlify-honeypot="bot-field">
 		<input
 			class="form-control valid"
 			name="name"
@@ -9,7 +9,6 @@
 			onfocus="this.placeholder = ''"
 			onblur="this.placeholder = 'Votre nom'"
 			placeholder="Nom"
-			value="contact"
 		/>
 		<input
   class="hidden"
@@ -24,12 +23,11 @@
 			onfocus="this.placeholder = ''"
 			onblur="this.placeholder = 'Votre courriel'"
 			placeholder="Courriel"
-			value="contact"
 		/>
 		<textarea name="message"></textarea>
-<button type="submit" class="button button-contactForm boxed-btn">
-			Envoyer
-		</button>
+		<div class="button">
+            <button type="submit" class="btn btn-primary">SEND</button>
+        </div>
     </form>
   </div>
 </template>
