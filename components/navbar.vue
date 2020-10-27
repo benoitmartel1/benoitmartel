@@ -9,8 +9,8 @@
     <div class="titre">Développeur multimédia <br>\ Motion designer</div>
     <ul class="main menu">
       <nuxt-link id="portfolio" tag="li" exact to="/">Portfolio</nuxt-link>
-      <!-- <nuxt-link id="about" tag="li" to="/about">Moi</nuxt-link> -->
-      <!-- <nuxt-link id="contact" tag="li" to="/contact">Contact</nuxt-link> -->
+      <nuxt-link id="about" tag="li" to="/about">Mon profil</nuxt-link>
+      <nuxt-link id="contact" tag="li" to="/contact">Contact</nuxt-link>
     </ul>
   </div>
 </template>
@@ -34,6 +34,9 @@
   /* padding-top: 10px; */
   width: 100%;
   background: white;
+}
+.menu li:hover{
+	text-decoration: underline;
 }
 .nuxt-link-active,
 .active {
