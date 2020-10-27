@@ -46,7 +46,7 @@ export default {
         // main isotope options
         itemSelector: ".item",
         // set layoutMode
-        layoutMode: "fitRows"
+        layoutMode: "masonry"
       });
       //Filter Portfolio items
       $(".filter a").click(function(e) {

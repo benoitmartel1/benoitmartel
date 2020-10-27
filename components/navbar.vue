@@ -6,7 +6,7 @@
       Benoit Martel
       <!-- <img src="/media/logo.png"> -->
     </div>
-    <div class="titre">Développeur multimédia <br>& Motion designer</div>
+    <div class="titre">Développeur multimédia <br>\ Motion designer</div>
     <ul class="main menu">
       <nuxt-link id="portfolio" tag="li" exact to="/">Portfolio</nuxt-link>
       <!-- <nuxt-link id="about" tag="li" to="/about">Moi</nuxt-link> -->
