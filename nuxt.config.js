@@ -1,6 +1,7 @@
 var contents = require("./assets/js/content.json");
 
 module.exports = {
+		target: "static",
   generate: {
     routes: createRoutes(contents.items)
   },
@@ -12,7 +13,7 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: "Benoit Martel - Motion & Coding"
+        content: "Benoit Martel - Motion designer / Développeur multimédia"
       },
       { property: "og:image", content: "/media/portrait.png" }
     ],
