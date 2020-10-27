@@ -24,7 +24,8 @@
 			onblur="this.placeholder = 'Votre courriel'"
 			placeholder="Courriel"
 		/>
-		<button type="submit" class="button button-contactForm boxed-btn">
+		<textarea name="message"></textarea>
+<button type="submit" class="button button-contactForm boxed-btn">
 			Envoyer
 		</button>
     </form>
