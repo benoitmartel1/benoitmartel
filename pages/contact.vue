@@ -4,7 +4,7 @@
       name="contact2"
       netlify
       method="post"
-      action="/contact?success=true"
+      action="/success"
       netlify-honeypot="bot-field"
     >
       <v-text-field

@@ -11,9 +11,9 @@
       <nuxt-link id="portfolio" tag="li" exact to="/">
         Portfolio
       </nuxt-link>
-      <nuxt-link id="about" tag="li" to="/about">
+      <!-- <nuxt-link id="about" tag="li" to="/about">
         Mon profil
-      </nuxt-link>
+      </nuxt-link> -->
       <nuxt-link id="contact" tag="li" to="/contact" :class="isContactActive">
         Contact
       </nuxt-link>
