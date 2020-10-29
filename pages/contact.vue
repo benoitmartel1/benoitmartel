@@ -5,20 +5,16 @@
         name="name"
         label="Nom"
         outlined
-        hide-details="auto"
       />
       <v-text-field
         name="email"
         type="email"
         label="Courriel"
         outlined
-        hide-details="auto"
       />
       <v-textarea
         name="message"
-        type="text"
         label="Message"
-        hide-details="auto"
       />
       <v-btn
         class="mr-4"
