@@ -4,7 +4,7 @@
       ref="observer"
       v-slot="{ invalid }"
     >
-      <form @submit.prevent="submit">
+      <form netlify @submit.prevent="submit">
         <validation-provider
           v-slot="{ errors }"
           name="Name"
