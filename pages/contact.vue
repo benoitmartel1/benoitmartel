@@ -1,21 +1,24 @@
 <template>
   <div class="content">
-    <form name="contact2" netlify method="post" action="/">
+    <form name="contact2" netlify method="post" action="/contact?success=true" netlify-honeypot="bot-field">
       <v-text-field
         name="name"
         label="Nom"
         outlined
+        hide-details="auto"
       />
       <v-text-field
         name="email"
         type="email"
         label="Courriel"
         outlined
+        hide-details="auto"
       />
       <v-textarea
         name="message"
         type="text"
         label="Message"
+        hide-details="auto"
       />
       <v-btn
         class="mr-4"
