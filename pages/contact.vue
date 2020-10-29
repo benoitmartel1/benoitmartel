@@ -1,8 +1,14 @@
 <template>
   <div class="content">
-    <form name="contact2" method="POST" data-netlify="true">
+    <form name="contact2" netlify method="post" action="/">
       <v-text-field
         name="name"
+        label="Nom"
+        hide-details="auto"
+      />
+      <v-text-field
+        name="email"
+        type="email"
         label="Nom"
         hide-details="auto"
       />
