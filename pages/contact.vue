@@ -4,13 +4,18 @@
       <v-text-field
         name="name"
         label="Nom"
-        hide-details="auto"
+        outlined
       />
       <v-text-field
         name="email"
         type="email"
-        label="Nom"
-        hide-details="auto"
+        label="Courriel"
+        outlined
+      />
+      <v-textarea
+        name="message"
+        type="text"
+        label="Message"
       />
       <v-btn
         class="mr-4"
