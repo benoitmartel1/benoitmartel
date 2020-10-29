@@ -3,18 +3,17 @@
     <form name="contact2" netlify method="post" action="/contact?success=true" netlify-honeypot="bot-field">
       <v-text-field
         name="name"
-        label="Nom"
-        outlined
+        placeholder="Nom"
       />
       <v-text-field
         name="email"
         type="email"
-        label="Courriel"
-        outlined
+        placeholder="Courriel"
       />
       <v-textarea
         name="message"
-        label="Message"
+        placeholder="Message"
+        outlined
       />
       <v-btn
         class="mr-4"
@@ -28,7 +27,9 @@
 <script>
 
 export default {
-
+  asyncData ({ req }) {
+    console.log(req.headers)
+  }
 }
 </script>
 <style>
