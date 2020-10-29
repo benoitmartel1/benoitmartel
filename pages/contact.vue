@@ -1,16 +1,16 @@
 <template>
   <div class="content">
-    <form name="contact2" netlify>
+    <form name="contact2" method="POST" data-netlify="true">
       <v-text-field
         v-model="name"
-        :error-messages="errors"
+        name="name"
         label="Nom"
         required
       />
 
       <v-text-field
         v-model="email"
-        :error-messages="errors"
+        name="email"
         label="Courriel"
         required
       />
@@ -18,14 +18,12 @@
       <v-textarea
         v-model="textarea"
         auto-grow
-        :error-messages="errors"
         label="Message"
         type="textarea"
       />
       <v-btn
         class="mr-4"
         type="submit"
-        :disabled="invalid"
       >
         Envoyer
       </v-btn>
