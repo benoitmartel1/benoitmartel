@@ -16,6 +16,7 @@
 
       <v-textarea
         v-model="textarea"
+        name="message"
         auto-grow
         label="Message"
         type="textarea"
