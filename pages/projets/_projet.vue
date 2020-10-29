@@ -96,7 +96,7 @@ export default {
       return text.replace('<br>', ' ')
     },
     videoPath (v) {
-      return 'http://media.benoitmartel.com/' + v.path + '.mp4'
+      return 'https://media.benoitmartel.com/' + v.path + '.mp4'
     }
   },
   transition: {
