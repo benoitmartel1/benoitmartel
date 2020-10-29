@@ -1,97 +1,41 @@
 <template>
   <div class="content">
-    <validation-observer
-      ref="observer"
-      v-slot="{ invalid }"
-    >
-      <form name="contact-2" netlify>
-        <validation-provider
-          v-slot="{ errors }"
-          name="Name"
-          rules="required"
-        >
-          <v-text-field
-            v-model="name"
-            :error-messages="errors"
-            label="Nom"
-            required
-          />
-        </validation-provider>
-        <validation-provider
-          v-slot="{ errors }"
-          name="email"
-          rules="required|email"
-        >
-          <v-text-field
-            v-model="email"
-            :error-messages="errors"
-            label="Courriel"
-            required
-          />
-        </validation-provider>
-        <v-textarea
-          v-model="textarea"
-          auto-grow
-          :error-messages="errors"
-          label="Message"
-          type="textarea"
-        />
-        <v-btn
-          class="mr-4"
-          type="submit"
-          :disabled="invalid"
-        >
-          Envoyer
-        </v-btn>
-      </form>
-    </validation-observer>
+    <form name="contact2" netlify>
+      <v-text-field
+        v-model="name"
+        :error-messages="errors"
+        label="Nom"
+        required
+      />
+
+      <v-text-field
+        v-model="email"
+        :error-messages="errors"
+        label="Courriel"
+        required
+      />
+
+      <v-textarea
+        v-model="textarea"
+        auto-grow
+        :error-messages="errors"
+        label="Message"
+        type="textarea"
+      />
+      <v-btn
+        class="mr-4"
+        type="submit"
+        :disabled="invalid"
+      >
+        Envoyer
+      </v-btn>
+    </form>
   </div>
 </template>
 <script>
-import { required, email, max } from 'vee-validate/dist/rules'
-import { extend, ValidationObserver, ValidationProvider, setInteractionMode } from 'vee-validate'
-
-setInteractionMode('eager')
-
-extend('required', {
-  ...required,
-  message: 'Ce champ est requis.'
-})
-
-extend('max', {
-  ...max,
-  message: '{_field_} may not be greater than {length} characters'
-})
-
-extend('email', {
-  ...email,
-  message: 'Entrez une adresse courriel valide.'
-})
 
 export default {
-  components: {
-    ValidationProvider,
-    ValidationObserver
-  },
-  data: () => ({
-    name: '',
-    email: '',
-    textarea: '',
-    select: null,
-    items: [
-      'Item 1',
-      'Item 2',
-      'Item 3',
-      'Item 4'
-    ],
-    checkbox: null
-  }),
 
-  methods: {
-    submit () {
-      this.$refs.observer.validate()
-    }
-  }
 }
 </script>
 <style>
