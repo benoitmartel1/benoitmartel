@@ -14,13 +14,21 @@
       <nuxt-link id="about" tag="li" to="/about">
         Mon profil
       </nuxt-link>
-      <nuxt-link id="contact" tag="li" to="/contact">
+      <nuxt-link id="contact" tag="li" to="/contact" :class="isContactActive">
         Contact
       </nuxt-link>
     </ul>
   </div>
 </template>
-
+<script>
+export default {
+  computed: {
+    isContactActive () {
+      return (this.$route.name === 'success') ? 'nuxt-link-active' : ''
+    }
+  }
+}
+</script>
 <style>
 .logo {
   font-size: 2em;

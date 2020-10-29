@@ -61,7 +61,9 @@ a:active {
 .menu li:hover:not(.nuxt-link-active) {
   color: black;
 }
-
+.padded{
+	padding-top:30px;
+}
 @keyframes slideInFromRight {
   0% {
     transform: translateX(3%);

@@ -1,39 +1,16 @@
 <template>
   <div class="content padded">
-    <form
-      name="contact2"
-      netlify
-      method="post"
-      action="/contact?success=true"
-      netlify-honeypot="bot-field"
-    >
-      <v-text-field
-        name="name"
-        placeholder="Nom"
-      />
-      <v-text-field
-        name="email"
-        type="email"
-        placeholder="Courriel"
-      />
-      <v-textarea
-        name="message"
-        placeholder="Message"
-        outlined
-      />
-      <v-btn
-        class="mr-4"
-        type="submit"
-      >
-        Envoyer
-      </v-btn>
-    </form>
+    <h4>
+      Merci de votre intérêt! Je communique avec vous dans les plus brefs délais.<br>À bientôt!
+    </h4>
   </div>
 </template>
 <script>
 
 export default {
-
+  beforeMount () {
+    // document.getElementById('contact').className += ' nuxt-link-active'
+  }
 }
 </script>
 <style>

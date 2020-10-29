@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content padded">
     <!-- <img id="portrait" src="/media/portrait.png"> -->
     <p>
       Mes qualités artistiques se doublent de grandes aptitudes pour tout ce qui touche l’aspect technique de la production.
