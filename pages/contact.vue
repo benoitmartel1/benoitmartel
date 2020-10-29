@@ -2,24 +2,9 @@
   <div class="content">
     <form name="contact2" method="POST" data-netlify="true">
       <v-text-field
-        v-model="name"
         name="name"
         label="Nom"
-      />
-
-      <v-text-field
-        v-model="email"
-        name="email"
-        label="Courriel"
-        required
-      />
-
-      <v-textarea
-        v-model="textarea"
-        name="message"
-        auto-grow
-        label="Message"
-        type="textarea"
+        hide-details="auto"
       />
       <v-btn
         class="mr-4"
