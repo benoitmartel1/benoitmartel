@@ -5,7 +5,6 @@
         v-model="name"
         name="name"
         label="Nom"
-        required
       />
 
       <v-text-field
