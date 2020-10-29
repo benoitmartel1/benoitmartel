@@ -1,0 +1,60 @@
+<template>
+  <div class="top">
+    <div class="logo">
+      Benoit Martel
+      <!-- <img src="/media/logo.png"> -->
+    </div>
+    <div class="titre">
+      Développeur multimédia <br>\ Motion designer
+    </div>
+    <ul class="main menu">
+      <nuxt-link id="portfolio" tag="li" exact to="/">
+        Portfolio
+      </nuxt-link>
+      <nuxt-link id="about" tag="li" to="/about">
+        Mon profil
+      </nuxt-link>
+      <nuxt-link id="contact" tag="li" to="/contact">
+        Contact
+      </nuxt-link>
+    </ul>
+  </div>
+</template>
+
+<style>
+.logo {
+  font-size: 2em;
+  /* padding-left: 8px; */
+}
+.titre {
+  margin: 0 0 20px 0;
+  /* padding-left: 8px; */
+  font-size: 1.5em;
+}
+.top ul {
+  text-transform: uppercase;
+}
+.top {
+  padding: 20px 8% 0 8%;
+  /* padding-top: 10px; */
+  width: 100%;
+  background: white;
+}
+.menu li:hover {
+  text-decoration: underline;
+}
+.nuxt-link-active,
+.active {
+  background-color: palegreen;
+}
+
+.titre {
+  color: orange;
+}
+@media screen and (max-width: 500px) {
+  .menu li{
+font-size: 110%;
+padding:12px 10px;
+  }
+}
+</style>
