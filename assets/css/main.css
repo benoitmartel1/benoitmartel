@@ -61,6 +61,14 @@ a:active {
 .menu li:hover:not(.nuxt-link-active) {
   color: black;
 }
+.fas {
+	transition: all 200ms ease;
+	font-size: 1.5em;
+	padding: 12px 8px 0 0;
+  }
+  .fas:hover {
+	transform: translateX(-6px);
+  }
 .padded{
 	padding-top:30px;
 }

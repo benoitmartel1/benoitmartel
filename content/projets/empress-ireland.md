@@ -10,5 +10,5 @@ taches:
 images:
 - { path: PAP, isThumb: true }
 videos:
-- { path: PAP}
+- { path: pap}
 ---

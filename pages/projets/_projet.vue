@@ -82,9 +82,9 @@ export default {
       videoIsPaused: true
     }
   },
-  mounted () {
-    document.getElementById('portfolio').className += 'nuxt-link-active'
-  },
+  //   mounted () {
+  //     document.getElementById('portfolio').className += 'nuxt-link-active'
+  //   },
   methods: {
     isPlaying () {
       this.videoIsPaused = false
@@ -98,12 +98,12 @@ export default {
     videoPath (v) {
       return 'https://media.benoitmartel.com/' + v.path + '.mp4'
     }
-  },
-  transition: {
-    beforeLeave () {
-      document.getElementById('portfolio').className -= 'nuxt-link-active'
-    }
   }
+//   transition: {
+//     beforeLeave () {
+//       document.getElementById('portfolio').className -= 'nuxt-link-active'
+//     }
+//   }
 }
 </script>
 <style>
@@ -125,14 +125,6 @@ export default {
   font-size: 1.4em;
 }
 
-.fas {
-  transition: all 200ms ease;
-  font-size: 1.5em;
-  padding: 12px 8px 0 0;
-}
-.fas:hover {
-  transform: translateX(-6px);
-}
 .row.projet{
 display:inline-block!important;
   width: 100%;

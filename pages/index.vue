@@ -45,9 +45,9 @@ export default {
   mounted () {
     this.isotope()
   },
-  beforeMount () {
-    document.getElementById('portfolio').className += ' nuxt-link-active'
-  },
+  //   beforeMount () {
+  //     document.getElementById('portfolio').className += ' nuxt-link-active'
+  //   },
   methods: {
     isotope () {
       this.iso = new Isotope('.grid', {

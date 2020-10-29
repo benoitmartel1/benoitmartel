@@ -8,7 +8,7 @@
       Développeur multimédia <br>\ Motion designer
     </div>
     <ul class="main menu">
-      <nuxt-link id="portfolio" tag="li" exact to="/">
+      <nuxt-link id="portfolio" tag="li" exact to="/" :class="isPortfolioActive">
         Portfolio
       </nuxt-link>
       <!-- <nuxt-link id="about" tag="li" to="/about">
@@ -25,6 +25,9 @@ export default {
   computed: {
     isContactActive () {
       return (this.$route.name === 'success') ? 'nuxt-link-active' : ''
+    },
+    isPortfolioActive () {
+      return (this.$route.path.includes('projets')) ? 'nuxt-link-active' : ''
     }
   }
 }
