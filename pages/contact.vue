@@ -4,7 +4,7 @@
       ref="observer"
       v-slot="{ invalid }"
     >
-      <form name="contact-2" method="POST" data-netlify="true" netlify>
+      <form name="contact-2" netlify>
         <validation-provider
           v-slot="{ errors }"
           name="Name"
