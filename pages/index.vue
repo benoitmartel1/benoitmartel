@@ -7,7 +7,7 @@
     </ul>
     <div>
       <div class="row grid isotope">
-        <div v-for="(item, index) in projets" :key="index" :class="'item '+item.type">
+        <div v-for="(item, index) in sortByPriority(projets)" :key="index" :class="'item '+item.type">
           <nuxt-link :to="'/projets/'+ item.slug">
             <img :src="imgPath(item.images)">
             <div class="text">
@@ -49,6 +49,16 @@ export default {
   //     document.getElementById('portfolio').className += ' nuxt-link-active'
   //   },
   methods: {
+    sortByPriority (arr) {
+      // Set slice() to avoid to generate an infinite loop!
+      return arr.slice().sort(function (a, b) {
+        a.priority = a.priority === undefined ? 0 : a.priority
+        b.priority = b.priority === undefined ? 0 : b.priority
+        if (a.priority > b.priority) { return -1 }
+        if (a.priority < b.priority) { return 1 }
+        return 0
+      })
+    },
     isotope () {
       this.iso = new Isotope('.grid', {
         itemSelector: '.item'
