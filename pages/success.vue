@@ -1,8 +1,8 @@
 <template>
-  <div class="content padded">
+  <div class="bottom content">
     <nuxt-link exact to="/" class="fas fa-arrow-left" />
     <div class="message">
-      <p>Merci de votre intérêt!</p><p>Je communique avec vous dans les plus brefs délais.</p><p><br>À bientôt!</p>
+      <h3>Merci de votre intérêt!<br>Je communique avec vous dans les plus brefs délais.<br>À bientôt!</h3>
     </div>
   </div>
 </template>
