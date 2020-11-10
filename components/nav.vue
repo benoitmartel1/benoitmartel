@@ -18,6 +18,7 @@
       <nuxt-link id="contact" tag="li" to="/contact" :class="isContactActive">
         Contact
       </nuxt-link>
+      <nuxt-link id="success" tag="li" to="/success" style="visibility:hidden;" />
     </ul>
   </div>
 </template>
