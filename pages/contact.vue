@@ -4,10 +4,10 @@
     <form
       name="contact2"
       data-netlify:true
-      method="post"
-      action="/success"
+
       netlify-honeypot="bot-field"
     >
+      <!--       method="post"action="/success" -->
       <input type="hidden" name="contact2" value="ask-question">
       <v-text-field
         name="name"
