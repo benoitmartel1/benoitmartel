@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 <template>
   <div class="top content">
     <div class="logo">
@@ -86,8 +87,8 @@ export default {
 }
 @media screen and (max-width: 500px) {
   .menu li{
-	font-size: 90%;
-	padding:10px 10px;
+font-size: 90%;
+padding:10px 10px;
   }
 }
 </style>

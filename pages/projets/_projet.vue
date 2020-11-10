@@ -140,9 +140,7 @@ display:inline-block!important;
 .play:hover {
   opacity: 1;
 }
-.description {
 
-}
 @media screen and (max-width: 500px) {
   .row .video-container,
   .row .media-container {

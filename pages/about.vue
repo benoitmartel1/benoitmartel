@@ -11,7 +11,7 @@
         <section v-for="(category, index) in cat" :key="index">
           <h3>{{ category.name }}</h3>
           <ul>
-            <li v-for="(skill, index) in category.skills" :key="index">
+            <li v-for="(skill, sindex) in category.skills" :key="sindex">
               {{ skill }}
             </li>
           </ul>
