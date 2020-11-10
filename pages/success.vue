@@ -9,7 +9,7 @@
 
 <style>
 .message{
-margin-top:20px;
-font-size: 140%;
+	margin-top:20px;
+
 }
 </style>
