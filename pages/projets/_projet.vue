@@ -7,9 +7,9 @@
         <div v-if="item.client" class="client">
           {{ textWithoutBreaks(item.client) }}
         </div>
-        <div v-if="item.projet" class="projet">
+        <h3 v-if="item.projet">
           {{ textWithoutBreaks(item.projet) }}
-        </div>
+        </h3>
       </div>
 
       <div class="row projet">
@@ -32,9 +32,9 @@
         </div>
         <!-- descriptif latéral -->
         <div class="text-container">
-          <div class="description">
+          <h3>
             {{ item.description }}
-          </div>
+          </h3>
           <div v-if="item.taches" class="taches">
             <ul>
               <li v-for="(tache, index) in item.taches" :key="index">
@@ -82,9 +82,6 @@ export default {
       videoIsPaused: true
     }
   },
-  //   mounted () {
-  //     document.getElementById('portfolio').className += 'nuxt-link-active'
-  //   },
   methods: {
     isPlaying () {
       this.videoIsPaused = false
@@ -99,11 +96,6 @@ export default {
       return 'https://media.benoitmartel.com/' + v.path + '.mp4'
     }
   }
-//   transition: {
-//     beforeLeave () {
-//       document.getElementById('portfolio').className -= 'nuxt-link-active'
-//     }
-//   }
 }
 </script>
 <style>
@@ -121,10 +113,6 @@ export default {
   font-size: 1.1em;
   font-weight: 700;
 }
-.header .projet {
-  font-size: 1.4em;
-}
-
 .row.projet{
 display:inline-block!important;
   width: 100%;
@@ -153,8 +141,7 @@ display:inline-block!important;
   opacity: 1;
 }
 .description {
-  font-size: 140%;
-margin-bottom: 20px;
+
 }
 @media screen and (max-width: 500px) {
   .row .video-container,

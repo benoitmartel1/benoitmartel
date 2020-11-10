@@ -1,5 +1,6 @@
 <template>
-  <div class="content padded">
+  <div class="content bottom">
+    <h3>N'hésitez pas à communiquer avec moi pour toute question<br>Au plaisir de travailler ensemble!</h3>
     <form
       name="contact2"
       netlify
@@ -9,12 +10,12 @@
     >
       <v-text-field
         name="name"
-        placeholder="Nom"
+        placeholder="Votre nom"
       />
       <v-text-field
         name="email"
         type="email"
-        placeholder="Courriel"
+        placeholder="Votre courriel"
       />
       <v-textarea
         name="message"

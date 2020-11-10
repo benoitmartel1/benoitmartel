@@ -19,6 +19,9 @@ body {
 ul {
   list-style: none;
 }
+li{ list-style-position: inside;
+
+}
 .content {
   padding: 0 8%;
 }
@@ -38,28 +41,20 @@ a:hover,
 a:active {
   color: inherit;
 }
+h3 {
+	font-weight: 400;
+  margin-bottom: 20px;
+	font-size: 1.4em;
+  }
 .row{
 	margin-right:0!important;
 	margin-left:0!important;
 	}
-.menu {
-  list-style: none;
-  padding-left: 0;
-  width: 100%;
-  /* border-bottom: 1px dotted #ccc; */
-  overflow: auto;
-  display: table;
-  margin: 0 auto;
-}
 
-.menu li {
-  padding: 5px 10px;
-  float: left;
-  display: block;
-}
-
-.menu li:hover:not(.nuxt-link-active) {
-  color: black;
+h3 {
+  font-weight: 400;
+margin-bottom: 20px;
+  font-size: 1.4em;
 }
 .fas {
 	transition: all 200ms ease;
@@ -69,7 +64,7 @@ a:active {
   .fas:hover {
 	transform: translateX(-6px);
   }
-.padded{
+.bottom.content{
 	padding-top:30px;
 }
 @keyframes slideInFromRight {
@@ -83,6 +78,9 @@ a:active {
   }
 }
 @media screen and (max-width: 500px) {
+	h3{
+		font-size:1.2em;
+	}
   body {
     font-size: 16px;
     margin: 0;
@@ -91,7 +89,15 @@ a:active {
   .top {
     width: 100% !important;
   }
+
   .content {
+		padding: 0 6%;  
     margin: 0;
   }
+
+  .bottom.content{
+	padding-top:30px;
+	padding-left:6%;
+	padding-right:6%;
+}
 }

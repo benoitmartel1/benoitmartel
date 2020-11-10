@@ -1,5 +1,5 @@
 <template>
-  <div class="top">
+  <div class="top content">
     <div class="logo">
       Benoit Martel
       <!-- <img src="/media/logo.png"> -->
@@ -11,9 +11,9 @@
       <nuxt-link id="portfolio" tag="li" exact to="/" :class="isPortfolioActive">
         Portfolio
       </nuxt-link>
-      <!-- <nuxt-link id="about" tag="li" to="/about">
+      <nuxt-link id="about" tag="li" to="/about">
         Mon profil
-      </nuxt-link> -->
+      </nuxt-link>
       <nuxt-link id="contact" tag="li" to="/contact" :class="isContactActive">
         Contact
       </nuxt-link>
@@ -35,21 +35,24 @@ export default {
 <style>
 .logo {
   font-size: 2em;
-  /* padding-left: 8px; */
+  /* color:orange; */
 }
 .titre {
+/* color:white!important; */
   margin: 0 0 20px 0;
-  /* padding-left: 8px; */
   font-size: 1.5em;
 }
 .top ul {
   text-transform: uppercase;
 }
 .top {
-  padding: 20px 8% 0 8%;
-  /* padding-top: 10px; */
+
+  padding-top: 20px;
   width: 100%;
   background: white;
+  /* background-image: url('/media/arduino.jpg'); */
+  background-size: 150%;
+  background-position: 10% 20%;
 }
 .menu li:hover {
   text-decoration: underline;
@@ -62,10 +65,29 @@ export default {
 .titre {
   color: orange;
 }
+.menu {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  /* border-bottom: 1px dotted #ccc; */
+  overflow: auto;
+  display: table;
+  margin: 0 auto;
+}
+
+.menu li {
+  padding: 10px 10px;
+  float: left;
+  display: block;
+}
+
+.menu li:hover:not(.nuxt-link-active) {
+  color: black;
+}
 @media screen and (max-width: 500px) {
   .menu li{
-font-size: 110%;
-padding:12px 10px;
+	font-size: 90%;
+	padding:10px 10px;
   }
 }
 </style>

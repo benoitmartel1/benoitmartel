@@ -7,7 +7,7 @@
     </ul>
     <div>
       <div class="row grid isotope">
-        <div v-for="(item, index) in sortByPriority(projets)" :key="index" :class="'item '+item.type">
+        <div v-for="(item, index) in sortByPriority(projets)" :key="index" :class="'item '+item.type.toLowerCase()">
           <nuxt-link :to="'/projets/'+ item.slug">
             <img :src="imgPath(item.images)">
             <div class="text">
@@ -38,19 +38,15 @@ export default {
   },
   data () {
     return {
-      filters: ['all', 'motion', 'code'],
+      filters: ['Tout', 'Motion', 'Code'],
       appliedFilterIndex: 0
     }
   },
   mounted () {
     this.isotope()
   },
-  //   beforeMount () {
-  //     document.getElementById('portfolio').className += ' nuxt-link-active'
-  //   },
   methods: {
     sortByPriority (arr) {
-      // Set slice() to avoid to generate an infinite loop!
       return arr.slice().sort(function (a, b) {
         a.priority = a.priority === undefined ? 0 : a.priority
         b.priority = b.priority === undefined ? 0 : b.priority
@@ -63,12 +59,11 @@ export default {
       this.iso = new Isotope('.grid', {
         itemSelector: '.item'
       })
-
       this.iso.layout()
     },
     filterProjets (index, slug) {
       this.appliedFilterIndex = index
-      slug = (slug === 'all') ? '*' : '.' + slug
+      slug = (slug === 'Tout') ? '*' : '.' + slug.toLowerCase()
       this.iso.arrange({
         filter: slug
       })
