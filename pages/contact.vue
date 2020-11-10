@@ -3,7 +3,7 @@
     <h3>N'hésitez pas à communiquer avec moi pour toute question<br>Au plaisir de travailler ensemble!</h3>
     <form
       name="contact2"
-      netlify
+      data-netlify:true
       method="post"
       action="/success"
       netlify-honeypot="bot-field"
