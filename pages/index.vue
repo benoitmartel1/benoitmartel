@@ -155,9 +155,7 @@ export default {
   .item {
     max-width: 100%;
   }
-}
-@media (hover: none) {
-.item .text{
+  .item .text{
 opacity: 1;
 font-size: 120%;
 background: radial-gradient(circle, rgba(0,0,0,0.5) 16%, rgba(0,0,0,0.3) 100%);
@@ -165,5 +163,8 @@ background: radial-gradient(circle, rgba(0,0,0,0.5) 16%, rgba(0,0,0,0.3) 100%);
 .text div{
 top:0px;
 }
+}
+@media (hover: none) {
+
 }
 </style>
