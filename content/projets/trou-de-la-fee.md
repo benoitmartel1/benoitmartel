@@ -3,6 +3,7 @@ client: Trou de la fée
 projet: Spectacle immersif
 description: Spectacle immersif 360° projeté dans un amphitéâtre de roc.
 type: code
+priority: 90
 taches:
 - Faire le lien entre la production infographique et l’intégration sur place pour en assurer la conformité.
 subTaches: 

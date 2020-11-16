@@ -3,6 +3,7 @@ client: Parcs Canada
 projet: Capsule historique Georges-Étienne Cartier
 description: Capsule vidéo relatant le contexte géopolitique et les accomplissments de Georges-Étienne Cartier.
 type: motion
+priority: 80
 taches:
 - Motion design
 - Direction artistique
