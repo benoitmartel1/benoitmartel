@@ -6,6 +6,7 @@
       action="/success"
       novalidate
       data-netlify:true
+      method="post"
       netlify
       netlify-honeypot="bot-field"
     >
