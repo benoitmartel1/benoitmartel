@@ -3,14 +3,16 @@
     <h3>N'hésitez pas à communiquer avec moi pour toute question<br>Au plaisir de travailler ensemble!</h3>
     <form
       name="contact2"
+      action="/success"
       data-netlify:true
       method="post"
       netlify
       netlify-honeypot="bot-field"
     >
       <!--       action="/success" -->
-      <input type="hidden" name="contact2" value="ask-question">
+      <input type="hidden" name="form-name" value="contact2">
       <v-text-field
+        type="text"
         name="name"
         placeholder="Votre nom"
       />
