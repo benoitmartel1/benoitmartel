@@ -4,8 +4,8 @@
     <form
       name="contact2"
       action="/success"
+      novalidate
       data-netlify:true
-      method="post"
       netlify
       netlify-honeypot="bot-field"
     >
