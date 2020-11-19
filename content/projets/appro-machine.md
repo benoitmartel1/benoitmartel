@@ -5,7 +5,10 @@ description: Solution multiplateforme qui automatise le processus d'approbation 
 type: code
 priority: 70
 ressources:
-- Unity
+- Javascript
+- Bash
+- FFmpeg
+- MySql
 
 images:
 - {path: appro, isThumb: true}
